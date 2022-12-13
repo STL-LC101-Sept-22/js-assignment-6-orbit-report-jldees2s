@@ -15,7 +15,10 @@ export class Satellite {
 	}
 	
 	isSpaceDebris(): boolean {
+		if(newRow.type.isSpaceDebris() === 'Space Debris') {
 		return true;
+		}
+		return false;
 	}
 
 }
